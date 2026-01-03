@@ -442,12 +442,6 @@
                                     <button class="btn btn-search" type="submit">
                                         <i class="fas fa-search me-2"></i> Search
                                     </button>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <small class="text-muted">
-                                        Example: BAF-HRM-04-DD-004288-17
-                                    </small>
-                                </div>
                             </div>
                         </div>
                     </form>
@@ -838,28 +832,6 @@
             document.getElementById('certificateNumber').value = example;
             document.getElementById('verificationForm').dispatchEvent(new Event('submit'));
         }
-        
-        // Initialize with example certificate
-        window.addEventListener('load', function() {
-            // Set example certificate
-            document.getElementById('certificateNumber').value = 'BAF-HRM-04-DD-004288-17';
-            
-            // Show quick search examples
-            console.log('Quick search examples:');
-            console.log('1. BAF-HRM-04-DD-004288-17');
-            console.log('2. ENG-MEC-05-DD-003421-18');
-            console.log('3. ICT-SWE-03-DD-005678-19');
-            console.log('4. ACC-FIN-04-DD-007891-20');
-            console.log('5. CON-BLD-03-DD-009876-21');
-            console.log('6. ELE-PWR-05-DD-003215-22');
-            console.log('7. HOT-MGT-04-DD-008432-23');
-            console.log('8. AGR-EXT-03-DD-005123-24');
-            console.log('9. MED-NUR-04-DD-001234-25');
-            console.log('10. ITC-NET-05-DD-002345-26');
-            console.log('11. AUT-MEC-04-DD-003456-27');
-            console.log('12. BEA-COS-03-DD-004567-28');
-            console.log('13. TEX-FAS-04-DD-005678-29');
-        });
         
         // Add keyboard shortcut (Enter to search)
         document.getElementById('certificateNumber').addEventListener('keypress', function(e) {
