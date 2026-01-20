@@ -717,7 +717,908 @@
             },
             'BAF-ACF-04-DD-005295-18': {
                 studentName: 'Imane Dawid Hassen',
-                course: 'Accounting and Finance Level-04',
+                course: 'Accounting and <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="DIRE-COC Certificate Verification Portal">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Title -->
+    <title>DIRE-COC PORTAL - Certificate Verification</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://direcoc.org/img/coc-img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header Styles */
+        .header-area {
+            background: linear-gradient(to right, #61ba6d, #83c331);
+            padding: 15px 0;
+            color: white;
+        }
+        
+        .academy-logo img {
+            max-height: 80px;
+        }
+        
+        /* Navigation Styles */
+        .academy-main-menu {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .classynav ul li a {
+            color: #495057;
+            font-weight: 500;
+            padding: 10px 15px;
+        }
+        
+        .classynav ul li a:hover {
+            color: #61ba6d;
+        }
+        
+        .calling-info a {
+            color: #61ba6d;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .calling-info a:hover {
+            color: #83c331;
+        }
+        
+        /* Breadcrumb Area */
+        .breadcumb-area {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('breadcumb.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .bradcumbContent h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 50px 0;
+            min-height: 70vh;
+        }
+        
+        .verification-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .card-header-gradient {
+            background: linear-gradient(to right, #61ba6d, #83c331);
+            color: white;
+            padding: 20px;
+            border: none;
+        }
+        
+        .search-input {
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-input:focus {
+            border-color: #61ba6d;
+            box-shadow: 0 0 0 0.2rem rgba(97, 186, 109, 0.25);
+        }
+        
+        .btn-search {
+            background: linear-gradient(to right, #61ba6d, #83c331);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-search:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(97, 186, 109, 0.4);
+        }
+        
+        /* Certificate Display */
+        .certificate-display {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .certificate-border {
+            border: 3px solid #61ba6d;
+            border-radius: 10px;
+            padding: 30px;
+            background: white;
+        }
+        
+        .certificate-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .institute-logo {
+            height: 120px;
+            margin-bottom: 15px;
+        }
+        
+        .certificate-title {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .candidate-photo {
+            width: 180px;
+            height: 180px;
+            border: 3px solid #61ba6d;
+            border-radius: 5px;
+            margin: 0 auto 20px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .candidate-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .photo-placeholder {
+            color: #6c757d;
+            font-size: 4rem;
+        }
+        
+        .certificate-details {
+            margin: 20px 0;
+        }
+        
+        .detail-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        .detail-value {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .certificate-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .candidate-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 20px 0;
+            text-decoration: underline;
+        }
+        
+        .course-name {
+            font-size: 1.5rem;
+            color: #61ba6d;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+        
+        .action-buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .btn-print {
+            background: linear-gradient(to right, #61ba6d, #83c331);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+        .btn-new-search {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+        /* Footer Styles */
+        .footer-area {
+            background: #343a40;
+            color: white;
+            padding: 50px 0 20px 0;
+        }
+        
+        .footer-widget h6 {
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .useful-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .useful-links li {
+            margin-bottom: 10px;
+        }
+        
+        .useful-links a {
+            color: #61ba6d;
+            text-decoration: none;
+        }
+        
+        .useful-links a:hover {
+            color: #83c331;
+        }
+        
+        .single-contact {
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .single-contact i {
+            color: #61ba6d;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .bottom-footer-area {
+            background: #212529;
+            padding: 20px 0;
+            text-align: center;
+            color: #6c757d;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .breadcumb-area {
+                padding: 60px 0;
+            }
+            
+            .bradcumbContent h2 {
+                font-size: 1.8rem;
+            }
+            
+            .certificate-border {
+                padding: 15px;
+            }
+            
+            .candidate-name {
+                font-size: 1.5rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .btn-print, .btn-new-search {
+                width: 100%;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .header-area,
+            .academy-main-menu,
+            .breadcumb-area,
+            .btn-print,
+            .btn-new-search,
+            .footer-area {
+                display: none !important;
+            }
+            
+            .certificate-border {
+                border: none !important;
+                padding: 0 !important;
+            }
+            
+            body {
+                background: white !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            
+            /* Ensure photos print correctly */
+            .candidate-photo img {
+                display: block !important;
+                max-width: 180px !important;
+                max-height: 180px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Area -->
+    <header class="header-area">
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="academy-logo text-center">
+                            <img class="img-fluid" src="https://direcoc.org/img/coc-img/header-title.png" alt="DIRE-COC Portal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="academy-main-menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://direcoc.org/index.php">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    Certification
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Certificate Verification</a></li>
+                                    <li><a class="dropdown-item" href="#">Certificate with Control NO</a></li>
+                                    <li><a class="dropdown-item" href="#">Online Result & Certification</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sectors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Announcement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="calling-info">
+                            <a href="https://direcoc.org/login.php">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcumb Area -->
+    <div class="breadcumb-area">
+        <div class="bradcumbContent">
+            <h2>Certificate Verification</h2>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Verification Card -->
+            <div class="verification-card">
+                <!-- Search Form -->
+                <div class="card-header-gradient">
+                    <h4 class="mb-0"><i class="fas fa-search me-2"></i> Search Certificate Here</h4>
+                </div>
+                
+                <div class="card-body p-4">
+                    <form id="verificationForm">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" 
+                                           class="form-control search-input" 
+                                           id="certificateNumber" 
+                                           placeholder="Enter Certificate Number Here"
+                                           required>
+                                    <button class="btn btn-search" type="submit">
+                                        <i class="fas fa-search me-2"></i> Search
+                                    </button>
+                                </div>
+                                <div class="mt-3 text-center">
+                                    <small class="text-muted">
+                                        <i class="fas fa-lightbulb me-1"></i>
+                                        Try: BAF-HRM-04-DD-005285-18 or BAF-HRM-04-DD-005286-18
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Certificate Display Area -->
+                    <div class="certificate-display" id="certificateDisplay">
+                        <div class="certificate-border">
+                            <!-- Certificate Header -->
+                            <div class="certificate-header">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-center">
+                                        <img src="https://direcoc.org/img/coc-img/logo.png" 
+                                             alt="DIRE-COC Logo" 
+                                             class="institute-logo">
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <h2 class="certificate-title">DIRE DAWA CITY ADMINISTRATION</h2>
+                                        <h4 class="text-success">Center of Competence</h4>
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="logo-2.png" 
+                                             alt="Ministry Logo" 
+                                             class="institute-logo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Certificate Body -->
+                            <div class="certificate-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="certificate-details">
+                                            <div class="detail-item">
+                                                <span class="detail-label">Certificate No.:</span><br>
+                                                <span class="detail-value" id="certNo">BAF-HRM-04-DD-004288-17</span>
+                                            </div>
+                                            <div class="detail-item">
+                                                <span class="detail-label">Date Issued:</span><br>
+                                                <span class="detail-value" id="issueDate">05/09/2025 G.C</span>
+                                            </div>
+                                            <div class="detail-item">
+                                                <span class="detail-label">Valid Until:</span><br>
+                                                <span class="detail-value" id="validUntil">05/09/2028 G.C</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <div class="candidate-photo" id="studentPhotoContainer">
+                                            <i class="fas fa-user photo-placeholder"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+
+                                <!-- Certificate Title -->
+                                <div class="text-center my-4">
+                                    <h1 class="certificate-title">TEMPORARY NATIONAL CERTIFICATE</h1>
+                                </div>
+
+                                <!-- Certificate Content -->
+                                <div class="certificate-content">
+                                    <p>This is to certify that</p>
+                                    <h2 class="candidate-name" id="studentName">Fuad Umar Abdulle</h2>
+                                    <p>has demonstrated competence against the national occupational standards on:</p>
+                                    <h3 class="course-name" id="courseName">Human Resources Management Level-04</h3>
+                                    <p>
+                                        This certificate of competence has been given pending the printing and issuance of the actual National Certificate.<br>
+                                        This certificate shall be surrendered when claiming the original National Certificate.
+                                    </p>
+                                </div>
+
+                                <!-- Certificate Footer -->
+                                <div class="text-center mt-5 pt-4 border-top">
+                                    <p>
+                                        This National Certificate is issued under the authority of the Ministry of Education<br>
+                                        and is recognized within the Ethiopian TVET Qualifications Framework.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <button class="btn btn-print" onclick="printCertificate()">
+                                <i class="fas fa-print me-2"></i> Print Certificate
+                            </button>
+                            <button class="btn btn-new-search" onclick="newSearch()">
+                                <i class="fas fa-search me-2"></i> New Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <footer class="footer-area">
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+                    <!-- About Developers -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="footer-widget">
+                            <h6>About The Developers</h6>
+                            <p>
+                                This Website is developed by<br>
+                                <b class="text-success">Ampoule Software Development - Dire Dawa, Ethiopia</b>.<br>
+                                <b>Updated By:</b><br>
+                                <b class="text-success">Dire Dawa University Institute of Technology</b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Useful Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <div class="footer-widget">
+                            <h6>Useful Links</h6>
+                            <nav>
+                                <ul class="useful-links">
+                                    <li><a href="https://direcoc.org/index.php">Home</a></li>
+                                    <li><a href="#">Sectors</a></li>
+                                    <li><a href="#">Our Posts</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-widget">
+                            <h6>Gallery</h6>
+                            <div class="gallery-placeholder text-center py-4 bg-dark rounded">
+                                <i class="fas fa-images fa-2x text-muted"></i>
+                                <p class="mt-2 text-muted">Gallery Images</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-widget">
+                            <h6>Contact</h6>
+                            <div class="contact-info">
+                                <div class="single-contact">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Location: Dire Dawa Kebele 03, Dire Dawa Ethiopia.</p>
+                                </div>
+                                <div class="single-contact">
+                                    <i class="fas fa-university"></i>
+                                    <p>Bank Account-(CBE): 606C22003427</p>
+                                </div>
+                                <div class="single-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <p>Phone-1: 025-111-06-34<br>Phone-2: 025-411-77-77</p>
+                                </div>
+                                <div class="single-contact">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>Post: 131</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="bottom-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mb-0">
+                            Copyright © <span id="currentYear"></span>. Dire Dawa City Center of Competence. Dire Dawa, Ethiopia. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Form submission handler
+        document.getElementById('verificationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const certNumber = document.getElementById('certificateNumber').value.trim();
+            
+            if (!certNumber) {
+                alert('Please enter a certificate number');
+                return;
+            }
+            
+            // Simulate API call
+            setTimeout(() => {
+                const response = verifyCertificate(certNumber);
+                
+                if (response.success) {
+                    // Update certificate details
+                    updateCertificateDetails(response.data);
+                    
+                    // Show certificate display
+                    document.getElementById('certificateDisplay').style.display = 'block';
+                    
+                    // Scroll to certificate
+                    document.getElementById('certificateDisplay').scrollIntoView({ 
+                        behavior: 'smooth' 
+                    });
+                } else {
+                    alert(response.message || 'Certificate not found');
+                    document.getElementById('certificateDisplay').style.display = 'none';
+                }
+            }, 500);
+        });
+        
+        // Certificate database with photo filenames
+        const certificateDatabase = {
+            'BAF-HRM-04-DD-005285-18': {
+                studentName: 'Hangatu Abduselam Ahamed',
+                course: 'Human Resources Management Level-04',
+                issueDate: '02/01/2026 G.C',
+                validUntil: '02/01/2029 G.C',
+                status: 'Verified',
+                photo: 'hangatu.jpg'  // This will be used in <img src="hangatu.jpg">
+            },
+            'BAF-HRM-04-DD-005286-18': {
+                studentName: 'Iftu Hamid Abrahim',
+                course: 'Human Resource Management Level-04',
+                issueDate: '02/01/2026 G.C',
+                validUntil: '02/01/2029 G.C',
+                status: 'Verified',
+                photo: 'iftu.jpg'  // This will be used in <img src="iftu.jpg">
+            },
+            'Agr-AHS-DD-06-00892-18': {
+                studentName: 'Reduwan Abdusemad Ibro',
+                course: 'Animal Health Level-04',
+                issueDate: '20/11/2025 G.C',
+                validUntil: '20/11/2028 G.C',
+                status: 'Verified',
+                photo: 'reduwan.jpg'  // This will be used in <img src="reduwan.jpg">
+            },
+            'NS-HEX-DD-07-007562-18': {
+                studentName: 'Malika Mohammed Ahmednur',
+                course: 'Health Extension Level-04',
+                issueDate: '10/01/2025 G.C',
+                validUntil: '10/01/2028 G.C',
+                status: 'Verified',
+                photo: 'malika.jpg'  // This will be used in <img src="malika.jpg">
+            },
+            'PS-WWO-06-DD-004782-18': {
+                studentName: 'Muaz Jabir Idris',
+                course: 'Waste Water Operation Level-04',
+                issueDate: '15/06/2025 G.C',
+                validUntil: '15/06/2028 G.C',
+                status: 'Verified',
+                photo: 'muaz.jpg'  // This will be used in <img src="muaz.jpg">
+            },
+            'ELE-PWR-05-DD-003215-22': {
+                studentName: 'John Doe Smith',
+                course: 'Electrical Power Level-05',
+                issueDate: '20/03/2024 G.C',
+                validUntil: '20/03/2027 G.C',
+                status: 'Verified',
+                photo: 'john.jpg'  // This will be used in <img src="john.jpg">
+            },
+            'HOT-MGT-04-DD-008432-23': {
+                studentName: 'Anna Johnson Williams',
+                course: 'Hotel Management Level-04',
+                issueDate: '05/12/2023 G.C',
+                validUntil: '05/12/2026 G.C',
+                status: 'Verified',
+                photo: 'anna.jpg'  // This will be used in <img src="anna.jpg">
+            },
+            'AGR-EXT-03-DD-005123-24': {
+                studentName: 'Michael Tesfaye Kebede',
+                course: 'Agricultural Extension Level-03',
+                issueDate: '30/07/2024 G.C',
+                validUntil: '30/07/2027 G.C',
+                status: 'Verified',
+                photo: 'michael.jpg'  // This will be used in <img src="michael.jpg">
+            },
+            'MED-NUR-04-DD-001234-25': {
+                studentName: 'Sarah Johnson Miller',
+                course: 'Nursing Level-04',
+                issueDate: '25/05/2024 G.C',
+                validUntil: '25/05/2027 G.C',
+                status: 'Verified',
+                photo: 'sarah.jpg'  // This will be used in <img src="sarah.jpg">
+            },
+            'ITC-NET-05-DD-002345-26': {
+                studentName: 'David Chen Wang',
+                course: 'Network Administration Level-05',
+                issueDate: '18/09/2023 G.C',
+                validUntil: '18/09/2026 G.C',
+                status: 'Verified',
+                photo: 'david.jpg'  // This will be used in <img src="david.jpg">
+            },
+            'AUT-MEC-04-DD-003456-27': {
+                studentName: 'Robert Garcia Lopez',
+                course: 'Automotive Mechanics Level-04',
+                issueDate: '12/11/2024 G.C',
+                validUntil: '12/11/2027 G.C',
+                status: 'Verified',
+                photo: 'robert.jpg'  // This will be used in <img src="robert.jpg">
+            },
+            'BEA-COS-03-DD-004567-28': {
+                studentName: 'Emily Davis Brown',
+                course: 'Cosmetology Level-03',
+                issueDate: '08/02/2023 G.C',
+                validUntil: '08/02/2026 G.C',
+                status: 'Verified',
+                photo: 'emily.jpg'  // This will be used in <img src="emily.jpg">
+            },
+            'TEX-FAS-04-DD-005678-29': {
+                studentName: 'Jennifer Wilson Taylor',
+                course: 'Fashion Design Level-04',
+                issueDate: '22/08/2024 G.C',
+                validUntil: '22/08/2027 G.C',
+                status: 'Verified',
+                photo: 'jennifer.jpg'  // This will be used in <img src="jennifer.jpg">
+            }
+        };
+        
+        // Verify certificate function
+        function verifyCertificate(certNumber) {
+            // Convert to uppercase for case-insensitive matching
+            certNumber = certNumber.toUpperCase().trim();
+            
+            // Direct match
+            if (certificateDatabase[certNumber]) {
+                return {
+                    success: true,
+                    data: {
+                        ...certificateDatabase[certNumber],
+                        certificateNo: certNumber
+                    }
+                };
+            }
+            
+            // Try partial match
+            for (const key in certificateDatabase) {
+                if (key.includes(certNumber) || certNumber.includes(key)) {
+                    return {
+                        success: true,
+                        data: {
+                            ...certificateDatabase[key],
+                            certificateNo: key
+                        }
+                    };
+                }
+            }
+            
+            return {
+                success: false,
+                message: 'Certificate not found. Please check the certificate number and try again.'
+            };
+        }
+        
+        // Update certificate details with photo
+        function updateCertificateDetails(data) {
+            // Update text details
+            document.getElementById('certNo').textContent = data.certificateNo;
+            document.getElementById('studentName').textContent = data.studentName;
+            document.getElementById('courseName').textContent = data.course;
+            document.getElementById('issueDate').textContent = data.issueDate;
+            document.getElementById('validUntil').textContent = data.validUntil;
+            
+            // Update student photo using <img src="">
+            const photoContainer = document.getElementById('studentPhotoContainer');
+            
+            if (data.photo) {
+                // Clear placeholder
+                photoContainer.innerHTML = '';
+                
+                // Create and add image element with <img src="">
+                const img = document.createElement('img');
+                img.src = data.photo;  // This uses the filename from database
+                img.alt = `Photo of ${data.studentName}`;
+                img.title = data.studentName;
+                img.onerror = function() {
+                    // If photo fails to load, show placeholder
+                    photoContainer.innerHTML = '<i class="fas fa-user photo-placeholder"></i>';
+                };
+                
+                photoContainer.appendChild(img);
+            } else {
+                // No photo available, show placeholder
+                photoContainer.innerHTML = '<i class="fas fa-user photo-placeholder"></i>';
+            }
+        }
+        
+        // Print certificate function
+        function printCertificate() {
+            window.print();
+        }
+        
+        // New search function
+        function newSearch() {
+            // Clear form
+            document.getElementById('certificateNumber').value = '';
+            
+            // Reset photo to placeholder
+            document.getElementById('studentPhotoContainer').innerHTML = '<i class="fas fa-user photo-placeholder"></i>';
+            
+            // Hide certificate display
+            document.getElementById('certificateDisplay').style.display = 'none';
+            
+            // Focus on search input
+            document.getElementById('certificateNumber').focus();
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Add keyboard shortcut (Enter to search)
+        document.getElementById('certificateNumber').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('verificationForm').dispatchEvent(new Event('submit'));
+            }
+        });
+        
+        // Quick test on page load (optional)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-fill with sample certificate for testing
+            // document.getElementById('certificateNumber').value = 'BAF-HRM-04-DD-005285-18';
+        });
+    </script>
+</body>
+</html>Finance Level-04',
                 issueDate: '20/01/2026 G.C',
                 validUntil: '20/01/2029 G.C',
                 status: 'Verified',
