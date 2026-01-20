@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,6 +170,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+        }
+        
+        .candidate-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .photo-placeholder {
@@ -443,6 +448,7 @@
                                     <button class="btn btn-search" type="submit">
                                         <i class="fas fa-search me-2"></i> Search
                                     </button>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -490,7 +496,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 text-center">
-                                        <div class="candidate-photo">
+                                        <div class="candidate-photo" id="studentPhotoContainer">
                                             <i class="fas fa-user photo-placeholder"></i>
                                         </div>
                                     </div>
@@ -645,12 +651,8 @@
                 return;
             }
             
-            // In a real application, you would fetch data from a server/database
-            // For demo purposes, we'll simulate data retrieval
-            
             // Simulate API call
             setTimeout(() => {
-                // This would be replaced with actual API response
                 const response = verifyCertificate(certNumber);
                 
                 if (response.success) {
@@ -671,99 +673,111 @@
             }, 500);
         });
         
-        // Certificate database simulation - EXPANDED WITH 10 MORE STUDENTS
+        // Certificate database with photo URLs
         const certificateDatabase = {
             'BAF-HRM-04-DD-005285-18': {
                 studentName: 'Hangatu Abduselam Ahamed',
                 course: 'Human Resources Management Level-04',
                 issueDate: '02/01/2026 G.C',
                 validUntil: '02/01/2029 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/hangatu.jpg'
             },
             'BAF-HRM-04-DD-005286-18': {
                 studentName: 'Iftu Hamid Abrahim',
                 course: 'Human Resource Management Level-04',
                 issueDate: '02/01/2026 G.C',
                 validUntil: '02/01/2029 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/iftu.jpg'
             },
             'Agr-AHS-DD-06-00892-18': {
                 studentName: 'Reduwan Abdusemad Ibro',
                 course: 'Animal Health Level-04',
                 issueDate: '20/11/2025 G.C',
                 validUntil: '20/11/2028 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/reduwan.jpg'
             },
-            // ADDED 10 MORE STUDENTS BELOW
             'NS-HEX-DD-07-007562-18': {
                 studentName: 'Malika Mohammed Ahmednur',
                 course: 'Health Extension Level-04',
                 issueDate: '10/01/2025 G.C',
                 validUntil: '10/01/2028 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/malika.jpg'
             },
             'PS-WWO-06-DD-004782-18': {
                 studentName: 'Muaz Jabir Idris',
                 course: 'Waste Water Operation Level-04',
                 issueDate: '15/06/2025 G.C',
                 validUntil: '15/06/2028 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/muaz.jpg'
             },
             'ELE-PWR-05-DD-003215-22': {
                 studentName: 'John Doe Smith',
                 course: 'Electrical Power Level-05',
                 issueDate: '20/03/2024 G.C',
                 validUntil: '20/03/2027 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/john.jpg'
             },
             'HOT-MGT-04-DD-008432-23': {
                 studentName: 'Anna Johnson Williams',
                 course: 'Hotel Management Level-04',
                 issueDate: '05/12/2023 G.C',
                 validUntil: '05/12/2026 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/anna.jpg'
             },
             'AGR-EXT-03-DD-005123-24': {
                 studentName: 'Michael Tesfaye Kebede',
                 course: 'Agricultural Extension Level-03',
                 issueDate: '30/07/2024 G.C',
                 validUntil: '30/07/2027 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/michael.jpg'
             },
             'MED-NUR-04-DD-001234-25': {
                 studentName: 'Sarah Johnson Miller',
                 course: 'Nursing Level-04',
                 issueDate: '25/05/2024 G.C',
                 validUntil: '25/05/2027 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/sarah.jpg'
             },
             'ITC-NET-05-DD-002345-26': {
                 studentName: 'David Chen Wang',
                 course: 'Network Administration Level-05',
                 issueDate: '18/09/2023 G.C',
                 validUntil: '18/09/2026 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/david.jpg'
             },
             'AUT-MEC-04-DD-003456-27': {
                 studentName: 'Robert Garcia Lopez',
                 course: 'Automotive Mechanics Level-04',
                 issueDate: '12/11/2024 G.C',
                 validUntil: '12/11/2027 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/robert.jpg'
             },
             'BEA-COS-03-DD-004567-28': {
                 studentName: 'Emily Davis Brown',
                 course: 'Cosmetology Level-03',
                 issueDate: '08/02/2023 G.C',
                 validUntil: '08/02/2026 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/emily.jpg'
             },
             'TEX-FAS-04-DD-005678-29': {
                 studentName: 'Jennifer Wilson Taylor',
                 course: 'Fashion Design Level-04',
                 issueDate: '22/08/2024 G.C',
                 validUntil: '22/08/2027 G.C',
-                status: 'Verified'
+                status: 'Verified',
+                photo: 'https://direcoc.org/student-photos/jennifer.jpg'
             }
         };
         
@@ -799,13 +813,43 @@
             };
         }
         
-        // Update certificate details
+        // Update certificate details with photo
         function updateCertificateDetails(data) {
             document.getElementById('certNo').textContent = data.certificateNo;
             document.getElementById('studentName').textContent = data.studentName;
             document.getElementById('courseName').textContent = data.course;
             document.getElementById('issueDate').textContent = data.issueDate;
             document.getElementById('validUntil').textContent = data.validUntil;
+            
+            // Update student photo
+            const photoContainer = document.getElementById('studentPhotoContainer');
+            
+            if (data.photo) {
+                // Clear placeholder
+                photoContainer.innerHTML = '';
+                
+                // Create and add image
+                const img = document.createElement('img');
+                img.src = data.photo;
+                img.alt = `Photo of ${data.studentName}`;
+                img.title = data.studentName;
+                
+                // Add loading and error handling
+                img.onload = function() {
+                    console.log('Photo loaded successfully');
+                };
+                
+                img.onerror = function() {
+                    // If photo fails to load, show placeholder
+                    photoContainer.innerHTML = '<i class="fas fa-user photo-placeholder"></i>';
+                    console.warn(`Could not load photo for ${data.studentName}`);
+                };
+                
+                photoContainer.appendChild(img);
+            } else {
+                // No photo available, show placeholder
+                photoContainer.innerHTML = '<i class="fas fa-user photo-placeholder"></i>';
+            }
         }
         
         // Print certificate function
@@ -818,6 +862,9 @@
             // Clear form
             document.getElementById('certificateNumber').value = '';
             
+            // Reset photo to placeholder
+            document.getElementById('studentPhotoContainer').innerHTML = '<i class="fas fa-user photo-placeholder"></i>';
+            
             // Hide certificate display
             document.getElementById('certificateDisplay').style.display = 'none';
             
@@ -826,12 +873,6 @@
             
             // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-        
-        // Quick search examples
-        function quickSearch(example) {
-            document.getElementById('certificateNumber').value = example;
-            document.getElementById('verificationForm').dispatchEvent(new Event('submit'));
         }
         
         // Add keyboard shortcut (Enter to search)
