@@ -456,12 +456,6 @@
                                         <i class="fas fa-search me-2"></i> Search
                                     </button>
                                 </div>
-                                <div class="mt-3 text-center">
-                                    <small class="text-muted">
-                                        <i class="fas fa-lightbulb me-1"></i>
-                                        Try: BAF-HRM-04-DD-005285-18 or BAF-HRM-04-DD-005286-18
-                                    </small>
-                                </div>
                             </div>
                         </div>
                     </form>
@@ -694,7 +688,7 @@
                 issueDate: '02/01/2026 G.C',
                 validUntil: '02/01/2029 G.C',
                 status: 'Verified',
-                photo: 'hangatu.jpg'  // This will be used in <img src="hangatu.jpg">
+                photo: 'hangatu.jpg'
             },
             'BAF-HRM-04-DD-005286-18': {
                 studentName: 'Iftu Hamid Abrahim',
@@ -702,7 +696,7 @@
                 issueDate: '02/01/2026 G.C',
                 validUntil: '02/01/2029 G.C',
                 status: 'Verified',
-                photo: 'iftu.jpg'  // This will be used in <img src="iftu.jpg">
+                photo: 'iftu.jpg'
             },
             'Agr-AHS-DD-06-00892-18': {
                 studentName: 'Reduwan Abdusemad Ibro',
@@ -710,7 +704,7 @@
                 issueDate: '20/11/2025 G.C',
                 validUntil: '20/11/2028 G.C',
                 status: 'Verified',
-                photo: 'reduwan.jpg'  // This will be used in <img src="reduwan.jpg">
+                photo: 'reduwan.jpg'
             },
             'NS-HEX-DD-07-007562-18': {
                 studentName: 'Malika Mohammed Ahmednur',
@@ -718,7 +712,7 @@
                 issueDate: '10/01/2025 G.C',
                 validUntil: '10/01/2028 G.C',
                 status: 'Verified',
-                photo: 'malika.jpg'  // This will be used in <img src="malika.jpg">
+                photo: 'malika.jpg'
             },
             'PS-WWO-06-DD-004782-18': {
                 studentName: 'Muaz Jabir Idris',
@@ -726,7 +720,7 @@
                 issueDate: '15/06/2025 G.C',
                 validUntil: '15/06/2028 G.C',
                 status: 'Verified',
-                photo: 'Hiwot.jpg'  // This will be used in <img src="muaz.jpg">
+                photo: 'muaz.jpg'
             },
             'ELE-PWR-05-DD-003215-22': {
                 studentName: 'John Doe Smith',
@@ -734,7 +728,7 @@
                 issueDate: '20/03/2024 G.C',
                 validUntil: '20/03/2027 G.C',
                 status: 'Verified',
-                photo: 'john.jpg'  // This will be used in <img src="john.jpg">
+                photo: 'john.jpg'
             },
             'HOT-MGT-04-DD-008432-23': {
                 studentName: 'Anna Johnson Williams',
@@ -742,7 +736,7 @@
                 issueDate: '05/12/2023 G.C',
                 validUntil: '05/12/2026 G.C',
                 status: 'Verified',
-                photo: 'anna.jpg'  // This will be used in <img src="anna.jpg">
+                photo: 'anna.jpg'
             },
             'AGR-EXT-03-DD-005123-24': {
                 studentName: 'Michael Tesfaye Kebede',
@@ -750,7 +744,7 @@
                 issueDate: '30/07/2024 G.C',
                 validUntil: '30/07/2027 G.C',
                 status: 'Verified',
-                photo: 'michael.jpg'  // This will be used in <img src="michael.jpg">
+                photo: 'michael.jpg'
             },
             'MED-NUR-04-DD-001234-25': {
                 studentName: 'Sarah Johnson Miller',
@@ -758,7 +752,7 @@
                 issueDate: '25/05/2024 G.C',
                 validUntil: '25/05/2027 G.C',
                 status: 'Verified',
-                photo: 'sarah.jpg'  // This will be used in <img src="sarah.jpg">
+                photo: 'sarah.jpg'
             },
             'ITC-NET-05-DD-002345-26': {
                 studentName: 'David Chen Wang',
@@ -766,7 +760,7 @@
                 issueDate: '18/09/2023 G.C',
                 validUntil: '18/09/2026 G.C',
                 status: 'Verified',
-                photo: 'david.jpg'  // This will be used in <img src="david.jpg">
+                photo: 'david.jpg'
             },
             'AUT-MEC-04-DD-003456-27': {
                 studentName: 'Robert Garcia Lopez',
@@ -774,7 +768,7 @@
                 issueDate: '12/11/2024 G.C',
                 validUntil: '12/11/2027 G.C',
                 status: 'Verified',
-                photo: 'robert.jpg'  // This will be used in <img src="robert.jpg">
+                photo: 'robert.jpg'
             },
             'BEA-COS-03-DD-004567-28': {
                 studentName: 'Emily Davis Brown',
@@ -782,7 +776,7 @@
                 issueDate: '08/02/2023 G.C',
                 validUntil: '08/02/2026 G.C',
                 status: 'Verified',
-                photo: 'emily.jpg'  // This will be used in <img src="emily.jpg">
+                photo: 'emily.jpg'
             },
             'TEX-FAS-04-DD-005678-29': {
                 studentName: 'Jennifer Wilson Taylor',
@@ -790,7 +784,7 @@
                 issueDate: '22/08/2024 G.C',
                 validUntil: '22/08/2027 G.C',
                 status: 'Verified',
-                photo: 'jennifer.jpg'  // This will be used in <img src="jennifer.jpg">
+                photo: 'jennifer.jpg'
             }
         };
         
@@ -890,12 +884,6 @@
             if (e.key === 'Enter') {
                 document.getElementById('verificationForm').dispatchEvent(new Event('submit'));
             }
-        });
-        
-        // Quick test on page load (optional)
-        document.addEventListener('DOMContentLoaded', function() {
-            // Auto-fill with sample certificate for testing
-            // document.getElementById('certificateNumber').value = 'BAF-HRM-04-DD-005285-18';
         });
     </script>
 </body>
